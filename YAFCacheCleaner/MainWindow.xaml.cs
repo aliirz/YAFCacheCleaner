@@ -11,6 +11,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Forms;
+using System.Threading;
+using System.Diagnostics;
 
 namespace YAFCacheCleaner
 {
@@ -19,9 +22,37 @@ namespace YAFCacheCleaner
     /// </summary>
     public partial class MainWindow : Window
     {
+        Thread cacheClearThread;
+
         public MainWindow()
         {
             InitializeComponent();
+            MinimizeToTray.Enable(this);
+
+            System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
+            timer.Interval = 14400000;
+            timer.Tick += new EventHandler(timer_Tick);
+            timer.Start();
+        }
+
+        void timer_Tick(object sender, EventArgs e)
+        {
+            cacheClearThread = new Thread(new ThreadStart(CacheClear));
+            cacheClearThread.Start();
+            
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            CacheClear();
+            
+        }
+
+        private static void CacheClear()
+        {
+            YAFDB db = new YAFDB();
+            Debug.WriteLine(db.ClearCache().ToString());
+            
         }
     }
 }

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="6ae74687-d11a-4557-9935-59f8e5af5b8c" name="ali@PUMA 2011-11-22 18:21:40" runUser="PUMA\ali" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="21ee0ede-b95d-42b3-a7a4-beb7c7faa402">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="ali_PUMA 2011-11-22 18_21_40">
+      <DeploymentItem filename="c:\users\ali\documents\visual studio 2010\Projects\YAFCacheCleaner\YAFCacheCleaner\bin\Debug\YAFCacheCleaner.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-11-22T18:21:40.1561194+05:00" queuing="2011-11-22T18:21:40.2521249+05:00" start="2011-11-22T18:21:40.2911272+05:00" finish="2011-11-22T18:21:55.3189867+05:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="ClearCacheTest" storage="c:\users\ali\documents\visual studio 2010\projects\yafcachecleaner\yafcachecleanertests\bin\debug\yafcachecleanertests.dll" id="604895de-aff5-a4a5-1984-ba25cf5bb1f8">
+      <Execution id="6a05d821-c11c-434f-96c5-ba23f22faf2a" />
+      <TestMethod codeBase="c:/users/ali/documents/visual studio 2010/Projects/YAFCacheCleaner/YAFCacheCleanerTests/bin/Debug/YAFCacheCleanerTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="YAFCacheCleanerTests.YAFDBTest, YAFCacheCleanerTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ClearCacheTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="604895de-aff5-a4a5-1984-ba25cf5bb1f8" executionId="6a05d821-c11c-434f-96c5-ba23f22faf2a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="6a05d821-c11c-434f-96c5-ba23f22faf2a" testId="604895de-aff5-a4a5-1984-ba25cf5bb1f8" testName="ClearCacheTest" computerName="PUMA" duration="00:00:14.0985997" startTime="2011-11-22T18:21:40.3721318+05:00" endTime="2011-11-22T18:21:55.2329818+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6a05d821-c11c-434f-96c5-ba23f22faf2a">
+      <Output>
+        <DebugTrace>The DELETE statement conflicted with the REFERENCE constraint "FK_yaf_ForumAccess_yaf_AccessMask". The conflict occurred in database "YAFNET", table "dbo.yaf_ForumAccess", column 'AccessMaskID'.
+The statement has been terminated.
+</DebugTrace>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;False&gt;. Actual:&lt;True&gt;. </Message>
+          <StackTrace>   at YAFCacheCleanerTests.YAFDBTest.ClearCacheTest() in c:\users\ali\documents\visual studio 2010\Projects\YAFCacheCleaner\YAFCacheCleanerTests\YAFDBTest.cs:line 27
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

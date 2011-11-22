@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="fd6ed13f-963c-4c35-b220-19d6899a31af" name="ali@PUMA 2011-11-22 20:02:37" runUser="PUMA\ali" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="21ee0ede-b95d-42b3-a7a4-beb7c7faa402">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment userDeploymentRoot="c:\users\ali\documents\visual studio 2010\Projects\YAFCacheCleaner\TestResults" useDefaultDeploymentRoot="false" enabled="false" runDeploymentRoot="ali_PUMA 2011-11-22 20_02_37">
+      <DeploymentItem filename="c:\users\ali\documents\visual studio 2010\Projects\YAFCacheCleaner\YAFCacheCleaner\bin\Debug\YAFCacheCleaner.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-11-22T20:02:37.5505826+05:00" queuing="2011-11-22T20:02:37.7475939+05:00" start="2011-11-22T20:02:37.7705952+05:00" finish="2011-11-22T20:02:38.5816416+05:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="ClearCacheTest" storage="c:\users\ali\documents\visual studio 2010\projects\yafcachecleaner\yafcachecleanertests\bin\debug\yafcachecleanertests.dll" id="604895de-aff5-a4a5-1984-ba25cf5bb1f8">
+      <Execution id="df4bdcdb-7023-49d0-b993-130a0f6b47dd" />
+      <TestMethod codeBase="c:/users/ali/documents/visual studio 2010/Projects/YAFCacheCleaner/YAFCacheCleanerTests/bin/Debug/YAFCacheCleanerTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="YAFCacheCleanerTests.YAFDBTest, YAFCacheCleanerTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ClearCacheTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="604895de-aff5-a4a5-1984-ba25cf5bb1f8" executionId="df4bdcdb-7023-49d0-b993-130a0f6b47dd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="df4bdcdb-7023-49d0-b993-130a0f6b47dd" testId="604895de-aff5-a4a5-1984-ba25cf5bb1f8" testName="ClearCacheTest" computerName="PUMA" duration="00:00:00.0801445" startTime="2011-11-22T20:02:37.7825959+05:00" endTime="2011-11-22T20:02:38.3786299+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="df4bdcdb-7023-49d0-b993-130a0f6b47dd">
+      <Output>
+        <DebugTrace>Index was outside the bounds of the array.
+</DebugTrace>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;False&gt;. Actual:&lt;True&gt;. </Message>
+          <StackTrace>   at YAFCacheCleanerTests.YAFDBTest.ClearCacheTest() in c:\users\ali\documents\visual studio 2010\Projects\YAFCacheCleaner\YAFCacheCleanerTests\YAFDBTest.cs:line 27
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>
